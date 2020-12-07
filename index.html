@@ -90,7 +90,7 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Basic Git commands</h2>
-          <p class="lead"></p>
+          <p class="lead">For beginners and experts alike, Git has some basic but vital commands that are going to stick with the users throughout their time with Git.</p>
             <p1>
             • 'pull': Used to download content from remote reposistories. Ex.: 'git pull'
             • 'add': This command adds a change in the directory to the staging area. Ex.: 'git add *'
@@ -108,7 +108,16 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>How to resolve conflicts</h2>
-          <p class="lead"></p>
+          <p class="lead">Sometimes developers will try to edit the same content. A conflict may frequently occur when one tries to edit a code that another is editing. The 'git merge' command is created to combine branches and resolve any conflicts.</p>
+          <p class="lead">In order to indentify and resolve conflicts:</p>
+            <p1>
+            • Type 'git status' to check the state of the working directory.
+            • The output will show that there are unmerged paths due to a conflict. A .txt file will also appear to let the user see what was modified.
+            • We will now see some strange new editions like '<<<<<<< HEAD', '=======', '>>>>>>> [new_branch_to_merge_later]'.
+            • Now we edit the conflict in the .txt file by removing all the conflict dividers.
+            • Once edited, use command 'git add merge .txt to stage the new merged content'.
+            • Create a new commit using the command 'git commit -m [commit]'.
+            </p1>
         </div>
       </div>
     </div>
